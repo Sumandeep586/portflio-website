@@ -1,0 +1,160 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(0, 0, 33);
+    color:white;
+}
+nav{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 70px;
+    background-color: rgb(2, 2, 96);
+}
+
+nav ul{
+    display: flex;
+    justify-content: centre;
+}
+nav ul li{
+    list-style: none;
+    margin:0 23px;
+}
+nav ul li a{
+    color:white;
+    text-decoration: none;
+    position: relative;
+}
+nav ul li a::after{
+    content:'';
+    width:0;
+    height:3px;
+    background:rgb(245, 245, 245);
+    position:absolute;
+    left:0;
+    bottom:-4px;
+    transition:0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.left{
+    font-size: 1.6rem;
+}
+.header-text{
+    margin-top: 3%;
+   margin-left: 3%;
+   margin-right: 15%;
+   font-size: 25px;
+}
+.header-text h1{
+    font-size: 39px;
+    margin-top:15px;
+    margin-left: 12%;
+}
+.header-text h1 span{
+    color:bisque;
+}
+.container{
+    margin-top: 5%;
+    margin-left: 8.5%;
+    font-size: 25px;
+    margin-right: 8%;
+}
+.container h2{
+    font-size:43px;
+    margin-top: 20px; 
+    margin-left: 36%;
+}
+.container h2 span{
+    color: bisque;
+}
+.container td span{
+    color:red;
+}
+.firstSection{
+    display:flex;
+    justify-content: space-around;
+    margin:23px 0;
+}
+.firstSection div{
+    width: 70%;
+}
+.leftSection img{
+    margin: 50px 0;
+     
+}
+.leftSection1{
+    margin:50 px 0;
+    margin-top: 8%;
+    margin-left:15%;
+
+}
+.rightSection{
+   margin-top: 3%;
+   margin-left: 5%;
+   margin-right: 0%;
+   font-size: 25px;
+}
+.container1{
+    margin-top: 5%;
+    margin-left: 35%;
+    font-size: 35px;
+}
+.container1 h2{
+    font-size: 46px;
+    margin-top: 20px; 
+    margin-left: 28%;
+}
+.container1 h2 span{
+    color: bisque;
+}
+.contact{
+    position: relative;
+    min-height: 60vh;
+    padding:50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+}
+.contact .content{
+    max-width: 800px;
+    text-align: center;
+}
+.contact .content h2{
+    font-size: 41px;
+    font-weight: 500;
+    color: bisque;
+}
+.container2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0px;
+}
+.container2 .contactInfo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    font-size: 21px;
+}
+.contactForm .inputBox input{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 10px;
+    margin: 10 px 0;
+    border-bottom: 2px solid #2d3516;
+}
+.contactForm .inputBox input:focus ~ span{
+    color: #e91ea5;
+    font-size: 14px;
+    transform: translate(-20px);
+}
+
